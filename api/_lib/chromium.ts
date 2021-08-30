@@ -3,6 +3,9 @@ import { getOptions } from './options';
 import { FileType } from './types';
 let _page: core.Page | null;
 
+const HEIGHT = 583;
+const WIDTH = 583;
+
 async function getPage(isDev: boolean) {
     if (_page) {
         return _page;
@@ -15,7 +18,7 @@ async function getPage(isDev: boolean) {
 
 export async function getScreenshot(html: string, type: FileType, isDev: boolean) {
     const page = await getPage(isDev);
-    await page.setViewport({ width: 2048, height: 1170 });
+    await page.setViewport({ width: WIDTH, height: HEIGHT });
     await page.setContent(html);
     const file = await page.screenshot({ type });
     return file;

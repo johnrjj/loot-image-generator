@@ -1,6 +1,6 @@
 # Loot Image Generator
 
-`http://localhost:3000/api?loot=iPhone|Protocol%20Labs%20Shirt|Figma%20Hat%20(Cyrillic)|Torn%20Jeans|Dusty%20Vans|Hoodie%20with%20Pockets|Figma%20Fanny%20Pack|Wedding%20Band`
+`https://loot-image-generator.vercel.app/api?loot=iPhone|Protocol%20Labs%20Shirt|Figma%20Hat%20(Cyrillic)|Torn%20Jeans|Dusty%20Vans|Hoodie%20with%20Pockets|Figma%20Fanny%20Pack|Wedding%20Band`
 
 Separate each line of loot by a `|`.
 

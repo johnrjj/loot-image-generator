@@ -1,51 +1,14 @@
-<a href="https://vercel.com/new/project?template=vercel/og-image"><img width="128" src="https://vercel.com/button" align="right"></a>
+# Loot Image Generator
 
-# [Open Graph Image as a Service](https://og-image.vercel.app)
+`http://localhost:3000/api?loot=iPhone|Protocol%20Labs%20Shirt|Figma%20Hat%20(Cyrillic)|Torn%20Jeans|Dusty%20Vans|Hoodie%20with%20Pockets|Figma%20Fanny%20Pack|Wedding%20Band`
 
-<a href="https://twitter.com/vercel">
-    <img align="right" src="https://og-image.vercel.app/tweet.png" height="300" />
-</a>
+Separate each line of loot by a `|`.
 
-Serverless service that generates dynamic Open Graph images that you can embed in your `<meta>` tags.
+e.g. loot=iPhone|Macbook|Backpack
 
-For each keystroke, headless chromium is used to render an HTML page and take a screenshot of the result which gets cached.
+Sourced from: `https://www.figma.com/file/Kqdak2Q81shWPhKgQtISyx/Loot-template?node-id=111%3A2`
 
-See the image embedded in the tweet for a real use case.
-
-
-## What is an Open Graph Image?
-
-Have you ever posted a hyperlink to Twitter, Facebook, or Slack and seen an image popup?
-How did your social network know how to "unfurl" the URL and get an image?
-The answer is in your `<head>`.
-
-The [Open Graph protocol](http://ogp.me) says you can put a `<meta>` tag in the `<head>` of a webpage to define this image.
-
-It looks like the following:
-
-```html
-<head>
-  <title>Title</title>
-  <meta property="og:image" content="http://example.com/logo.jpg" />
-</head>
-```
-
-## Why use this service?
-
-The short answer is that it would take a long time to painstakingly design an image for every single blog post and every single documentation page. And we don't want the exact same image for every blog post because that wouldn't make the article stand out when it was shared to Twitter. 
-
-That's where `og-image.vercel.app` comes in. We can simply pass the title of our blog post to our generator service and it will generate the image for us on the fly!
-
-It looks like the following:
-
-```html
-<head>
-  <title>Hello World</title>
-  <meta property="og:image" content="https://og-image.vercel.app/Hello%20World.png" />
-</head>
-```
-
-Now try changing the text `Hello%20World` to the title of your choosing and watch the magic happen ✨
+Idea from Steve: `https://twitter.com/steveklbnf/status/1432200660880035846`
 
 ## Deploy your own
 
